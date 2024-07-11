@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>News app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a><img class="logo" src="./assets/logo.png" id="india" onclick="navClick(id)"></a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="Cricket" onclick="navClick(id)">Cricket</li>
+                    <li class="hover-link nav-item" id="Finance" onclick="navClick(id)">Finance</li>
+                    <li class="hover-link nav-item" id="Politics" onclick="navClick(id)">Politics</li>
+                </ul>
+            </div>
+            <div class="mode flex">
+                <span>Theme: </span>
+                <div id="dark-mode"> 🌙 </div>
+                <!-- <button id="dark-mode">1</button> -->
+            </div>
+            <div class="search-box flex">
+                <input type="text" class="search" placeholder="Search" id="search-input">
+                <button class="search-button" id="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main id="for-mode-change">
+        <div class="card-container flex container" id="card-container">
+            
+        </div>
+    </main>
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://image-placeholder.com/images/actual-size/468x240.png" id="news-img">
+            </div>
+            <div class="card-content" id="card-content">
+                <h3 id="news-title">Title</h3>
+                <h6 id="news-source">Source</h6>
+                <p class="news-desc" id="news-desc">this is main</p>
+            </div>
+        </div>
+    </template>
+    <script src="script.js"></script>
+</body>
+</html>
